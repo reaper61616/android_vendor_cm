@@ -134,12 +134,12 @@ include vendor/cm/config/themes_common.mk
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
-    LatinIME \
+    #LatinIME \
     BluetoothExt
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
+    #VoicePlus \
     VoiceDialer \
     SoundRecorder \
     Basic \
@@ -149,15 +149,15 @@ PRODUCT_PACKAGES += \
     #Trebuchet \
 
 PRODUCT_PACKAGES += \
-    Launcher3 \
+    #Launcher3 \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
+    #CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock \
-    CMAccount
+    #CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+    #vendor/cm/proprietary/Term.apk:system/app/Term.apk \
     vendor/cm/prebuilt/common/app/GoogleHome.apk:system/app/GoogleHome.apk \
     vendor/cm/prebuilt/common/app/Hangouts.apk:system/app/Hangouts.apk \
     vendor/cm/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
