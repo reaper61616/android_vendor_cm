@@ -131,16 +131,6 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
-# Custom GApps
-include vendor/cm/prebuilt/common/app/Android.mk
-
-# Optional CF packages
-PRODUCT_PACKAGES += \
-    GoogleHome \
-    Hangouts \
-    LatinImeGoogle \
-    Velvet
-
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
@@ -227,6 +217,11 @@ PRODUCT_PACKAGES += \
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
     #vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+    vendor/cm/proprietary/Term.apk:system/app/GoogleHome.apk \
+    vendor/cm/proprietary/Term.apk:system/app/Hangouts.apk \
+    vendor/cm/proprietary/Term.apk:system/app/LatinImeGoogle.apk \
+    vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/cm/proprietary/Term.apk:system/app/Velvet.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
