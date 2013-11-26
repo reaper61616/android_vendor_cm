@@ -134,6 +134,13 @@ include vendor/cm/config/themes_common.mk
 # Custom GApps
 include vendor/cm/prebuilt/common/app/Android.mk
 
+# Optional CF packages
+PRODUCT_PACKAGES += \
+    GoogleHome \
+    Hangouts \
+    LatinImeGoogle \
+    Velvet
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
