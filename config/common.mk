@@ -220,7 +220,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/GoogleHome.apk:system/app/GoogleHome.apk \
     vendor/cm/proprietary/Hangouts.apk:system/app/Hangouts.apk \
     vendor/cm/proprietary/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
-    vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/cm/proprietary/Velvet.apk:system/app/Velvet.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
