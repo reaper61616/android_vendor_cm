@@ -7,8 +7,4 @@ mkdir -p $BASEDIR/proprietary
 curl -L -o $BASEDIR/proprietary/Term.apk -O -L http://jackpal.github.com/Android-Terminal-Emulator/downloads/Term.apk
 unzip -o -d $BASEDIR/proprietary $BASEDIR/proprietary/Term.apk lib/*
 
-cp $BASEDIR/prebuilt/common/app/GoogleHome.apk $BASEDIR/proprietary/GoogleHome.apk
-cp $BASEDIR/prebuilt/common/app/Hangouts.apk $BASEDIR/proprietary/Hangouts.apk
-cp $BASEDIR/prebuilt/common/app/LatinImeGoogle.apk $BASEDIR/proprietary/LatinImeGoogle.apk
 unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/LatinImeGoogle.apk lib/*
-cp $BASEDIR/prebuilt/common/app/Velvet.apk $BASEDIR/proprietary/Velvet.apk
