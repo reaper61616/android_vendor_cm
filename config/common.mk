@@ -221,7 +221,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/app/Hangouts.apk:system/app/Hangouts.apk \
     vendor/cm/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
     vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
-    vendor/cm/prebuilt/common/app/Velvet.apk:system/app/Velvet.apk
+    vendor/cm/prebuilt/common/app/Velvet.apk:system/priv-app/Velvet.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
