@@ -201,19 +201,21 @@ PRODUCT_PACKAGES += \
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
+# Custom GApps
+include vendor/cm/prebuilt/common/app/Android.mk
+
 PRODUCT_PACKAGES += \
+    LatinImeGoogle \
+    Hangouts \
+    Velvet \
+    GoogleHome \
     CMUpdater \
     Superuser \
     su
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
-    vendor/cm/prebuilt/common/app/GoogleHome.apk:system/app/GoogleHome.apk \
-    vendor/cm/prebuilt/common/app/Hangouts.apk:system/app/Hangouts.apk \
-    vendor/cm/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
-    vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
-    vendor/cm/prebuilt/common/app/Velvet.apk:system/priv-app/Velvet.apk
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
