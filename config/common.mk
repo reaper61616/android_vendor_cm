@@ -134,30 +134,22 @@ include vendor/cm/config/themes_common.mk
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
-    #LatinIME \
     BluetoothExt
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    #VoicePlus \
     VoiceDialer \
     SoundRecorder \
     Basic \
     libemoji
 
-# Custom CM packages
-    #Trebuchet \
-
 PRODUCT_PACKAGES += \
-    #Launcher3 \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    #CMWallpapers \
     Apollo \
     CMFileManager \
-    LockClock \
-    #CMAccount
+    LockClock
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
