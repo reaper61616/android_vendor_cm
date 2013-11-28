@@ -9,4 +9,4 @@ unzip -o -d $BASEDIR/proprietary $BASEDIR/proprietary/Term.apk lib/*
 
 unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/LatinImeGoogle.apk lib/*
 
-unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/Velvet.apk lib/*
+unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/com.google.android.googlequicksearchbox318.apk lib/*
