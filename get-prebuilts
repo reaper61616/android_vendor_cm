@@ -8,3 +8,5 @@ curl -L -o $BASEDIR/proprietary/Term.apk -O -L http://jackpal.github.com/Android
 unzip -o -d $BASEDIR/proprietary $BASEDIR/proprietary/Term.apk lib/*
 
 unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/LatinImeGoogle.apk lib/*
+
+unzip -o -d $BASEDIR/proprietary $BASEDIR/prebuilt/common/app/Velvet.apk lib/*

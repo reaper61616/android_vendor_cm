@@ -205,10 +205,6 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 include vendor/cm/prebuilt/common/app/Android.mk
 
 PRODUCT_PACKAGES += \
-    LatinImeGoogle \
-    Hangouts \
-    Velvet \
-    GoogleHome \
     CMUpdater \
     Superuser \
     su

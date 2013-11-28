@@ -1,41 +1,8 @@
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := LatinImeGoogle
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_PATH := $(TARGET_OUT_APPS)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := Hangouts
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_PATH := $(TARGET_OUT_APPS)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := Velvet
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_PATH := $(TARGET_OUT_DATA_APPS)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := GoogleHome
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_PATH := $(TARGET_OUT_DATA_APPS)
-include $(BUILD_PREBUILT)
+PRODUCT_COPY_FILES += \
+vendor/cm/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
+vendor/cm/proprietary/lib/armeabi-v7a/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+vendor/cm/prebuilt/common/app/Velvet.apk:system/app/Velvet.apk \
+vendor/cm/proprietary/lib/armeabi-v7a/libgoogle_recognizer_jni_l.so:system/lib/libgoogle_recognizer_jni_l.so \
+vendor/cm/proprietary/lib/armeabi-v7a/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
+vendor/cm/prebuilt/common/app/GoogleHome.apk:system/app/GoogleHome.apk \
+vendor/cm/prebuilt/common/app/Hangouts.apk:system/app/Hangouts.apk \
